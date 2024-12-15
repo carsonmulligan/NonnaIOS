@@ -1,0 +1,603 @@
+{
+    "kitchen_conversations": {
+      "family_recipes": {
+        "ragù": {
+          "opening": {
+            "user": "Nonna, ogni famiglia ha la sua ricetta del ragù?",
+            "emoji_logic": {
+              "emojis": ["👨‍👩‍👧‍👦", "🍲", "👵", "📖", "🇮🇹", "🥘", "❓"],
+              "text": [
+                "Famiglia",
+                "Piatto",
+                "Nonna",
+                "Ricettario",
+                "Italia",
+                "Ragù",
+                "Domanda"
+              ] 
+            },
+            "nonna": {
+              "reaction": "ride dolcemente",
+              "emoji_logic_reaction": {
+                "emojis": ["😊"],
+                "text": ["Dolcezza", "Affetto", "Risposta calda"]
+              },
+              "response": "Ogni famiglia, ogni nonna, ogni città! Il nostro è alla fiorentina 🍖",
+              "emoji_logic_response": {
+                "emojis": ["👵", "👨‍👩‍👧‍👦", "🏘️", "🇮🇹", "🍖"],
+                "text": [
+                  "Nonna",
+                  "Famiglia",
+                  "Ogni città",
+                  "Italia",
+                  "Carne (Fiorentina)"
+                ]
+              },
+              "gesture": "apre il vecchio quaderno di ricette",
+              "emoji_logic_gesture": {
+                "emojis": ["📔"],
+                "text": [
+                  "Vecchio ricettario",
+                  "Tradizione di famiglia",
+                  "Conoscenze antiche"
+                ]
+              },
+              "cultural_note": "Il ragù si cuoce almeno 4 ore, è un rito della domenica",
+              "emoji_logic_cultural_note": {
+                "emojis": ["⏳", "4️⃣", "🗓️", "🍲"],
+                "text": [
+                  "Lunga cottura",
+                  "Quattro ore",
+                  "Domenica",
+                  "Rito familiare"
+                ]
+              },
+              "branching": {
+                "about_ingredients": {
+                  "user": "Quali sono gli ingredienti segreti?",
+                  "emoji_logic": {
+                    "emojis": ["🤫", "🌰", "🍷", "🥛", "👴", "🥘", "❓"],
+                    "text": [
+                      "Segreto",
+                      "Noce moscata",
+                      "Vino",
+                      "Latte",
+                      "Nonno",
+                      "Ragù",
+                      "Domanda"
+                    ]
+                  },
+                  "nonna": {
+                    "response": "Un pizzico di noce moscata 🌰 e un po' di vino del nonno 🍷",
+                    "emoji_logic_response": {
+                      "emojis": ["🌰", "🍷"],
+                      "text": [
+                        "Noce moscata (aroma segreto)",
+                        "Vino del nonno (eredità famigliare)"
+                      ]
+                    },
+                    "memory": "Mia nonna aggiungeva anche il latte 🥛",
+                    "emoji_logic_memory": {
+                      "emojis": ["👵", "🥛"],
+                      "text": [
+                        "Antenata (bisnonna)",
+                        "Latte per morbidezza del ragù"
+                      ]
+                    },
+                    "follow_ups": [
+                      "Il vino deve essere rosso?",
+                      "Perché il latte?",
+                      "Quanto tempo cuoce davvero?"
+                    ],
+                    "emoji_logic_follow_ups": {
+                      "Il vino deve essere rosso?": {
+                        "emojis": ["🍷", "❓"],
+                        "text": ["Tipo di vino", "Influenza sul sapore"]
+                      },
+                      "Perché il latte?": {
+                        "emojis": ["🥛", "❓"],
+                        "text": ["Latte", "Domanda sulla cremosità"]
+                      },
+                      "Quanto tempo cuoce davvero?": {
+                        "emojis": ["⏳", "❓"],
+                        "text": ["Tempo di cottura", "Curiosità"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pane_toscano": {
+          "opening": {
+            "user": "Perché il pane toscano non ha sale?",
+            "emoji_logic": {
+              "emojis": ["🍞", "🥖", "🚫", "🧂", "🏰", "🇮🇹", "❓"],
+              "text": [
+                "Pane",
+                "Pane toscano",
+                "Nessun sale",
+                "Sale (assente)",
+                "Storia antica (castelli)",
+                "Italia",
+                "Domanda"
+              ]
+            },
+            "nonna": {
+              "response": "Ah, questa è una storia antica! Una guerra tra Firenze e Pisa 🏰",
+              "emoji_logic_response": {
+                "emojis": ["🏰"],
+                "text": ["Conflitto storico tra città (Firenze vs Pisa)"]
+              },
+              "cultural_history": "Pisa bloccava il sale, noi abbiamo imparato a farne senza",
+              "emoji_logic_cultural_history": {
+                "emojis": ["Pisa🚫🧂", "Firenze🍞"],
+                "text": [
+                  "Pisa bloccava il sale",
+                  "Firenze crea pane senza sale"
+                ]
+              },
+              "branching": {
+                "about_bread": {
+                  "user": "Come si fa il pane senza sale?",
+                  "emoji_logic": {
+                    "emojis": ["🍞", "🚫", "🧂", "❓"],
+                    "text": ["Pane", "Senza", "Sale", "Domanda sulla preparazione"]
+                  },
+                  "nonna": {
+                    "response": "Ci vuole la pasta madre 🥖 La mia è di 30 anni!",
+                    "emoji_logic_response": {
+                      "emojis": ["🥖", "3️⃣0️⃣", "🗓️"],
+                      "text": [
+                        "Pasta madre",
+                        "30 anni",
+                        "Antica e viva nel tempo"
+                      ]
+                    },
+                    "technical_details": "Si rinfresca ogni settimana",
+                    "emoji_logic_technical_details": {
+                      "emojis": ["⏳", "7️⃣", "🗓️"],
+                      "text": ["Rinfresco periodico", "Ogni settimana", "Cura continua"]
+                    },
+                    "follow_ups": [
+                      "Cos'è la pasta madre?",
+                      "Come si mantiene viva?",
+                      "Posso provare a farla?"
+                    ],
+                    "emoji_logic_follow_ups": {
+                      "Cos'è la pasta madre?": {
+                        "emojis": ["🥖", "❓"],
+                        "text": ["Lievito naturale", "Definizione"]
+                      },
+                      "Come si mantiene viva?": {
+                        "emojis": ["🥖", "❤️", "❓"],
+                        "text": ["Cura della pasta madre", "Amore", "Domanda"]
+                      },
+                      "Posso provare a farla?": {
+                        "emojis": ["🧑‍🍳", "❓"],
+                        "text": ["Tentativo personale", "Domanda sul fare in casa"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "lasagna": {
+          "opening": {
+            "user": "Nonna, come si prepara la lasagna tradizionale?",
+            "emoji_logic": {
+              "emojis": ["👩", "🥘", "🇮🇹", "❓"],
+              "text": [
+                "Nonna",
+                "Piatto (lasagna)",
+                "Italia",
+                "Domanda sulla preparazione"
+              ]
+            },
+            "nonna": {
+              "response": "Si inizia con una buona sfoglia fresca, poi ragù, besciamella e tanta pazienza!",
+              "emoji_logic_response": {
+                "emojis": ["🍝", "👵", "⏳", "🤌"],
+                "text": [
+                  "Pasta fresca",
+                  "Nonna",
+                  "Tempo/Pazienza",
+                  "Cura e abilità"
+                ]
+              },
+              "ingredients": "Farina, uova per la sfoglia, ragù ben cotto, besciamella e parmigiano",
+              "emoji_logic_ingredients": {
+                "emojis": ["🌾", "🥚", "🥛", "🧀", "🥘"],
+                "text": [
+                  "Farina",
+                  "Uova",
+                  "Besciamella (latte)",
+                  "Parmigiano",
+                  "Ragù"
+                ]
+              },
+              "follow_ups": [
+                "Devo far riposare la pasta?",
+                "Quanto ragù va messo?",
+                "Posso usare pasta già pronta?"
+              ],
+              "emoji_logic_follow_ups": {
+                "Devo far riposare la pasta?": {
+                  "emojis": ["⏳", "🍝", "❓"],
+                  "text": ["Tempo di riposo", "Pasta fresca", "Domanda"]
+                },
+                "Quanto ragù va messo?": {
+                  "emojis": ["🥘", "➕", "❓"],
+                  "text": ["Ragù", "Quantità da aggiungere", "Domanda"]
+                },
+                "Posso usare pasta già pronta?": {
+                  "emojis": ["🍝", "🏪", "❓"],
+                  "text": ["Pasta industriale", "Acquistata", "Domanda"]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "historical_conversations": {
+      "renaissance_florence": {
+        "opening": {
+          "user": "Nonno, com'era Firenze durante il Rinascimento?",
+          "emoji_logic": {
+            "emojis": ["🎨", "🖌️", "🏛️", "⏳", "📜", "👨‍🎨", "🇮🇹", "❓"],
+            "text": [
+              "Arte",
+              "Pittura",
+              "Architettura",
+              "Tempo (Rinascimento)",
+              "Documenti/Storia",
+              "Artisti",
+              "Italia",
+              "Domanda"
+            ]
+          },
+          "nonno": {
+            "reaction": "si aggiusta gli occhiali 👓",
+            "emoji_logic_reaction": {
+              "emojis": ["👓"],
+              "text": ["Messa a fuoco dei ricordi", "Chiarezza della memoria"]
+            },
+            "response": "Ah, l'epoca dei Medici! Ogni strada era una bottega d'artista 🎨",
+            "emoji_logic_response": {
+              "emojis": ["👨‍🦳", "💰", "🇮🇹", "🏘️", "👨‍🎨", "🎨"],
+              "text": [
+                "Nonno (memoria)",
+                "Medici (banchieri)",
+                "Italia rinascimentale",
+                "Strade fiorentine",
+                "Artisti",
+                "Arte diffusa"
+              ]
+            },
+            "passionate_details": {
+              "about_medici": {
+                "explanation": "I Medici non erano nobili, erano banchieri 💰",
+                "emoji_logic_explanation": {
+                  "emojis": ["👑", "❌", "💰"],
+                  "text": ["Non nobili", "Negazione", "Banchieri ricchi"]
+                },
+                "cultural_impact": "Hanno finanziato artisti come Michelangelo",
+                "emoji_logic_cultural_impact": {
+                  "emojis": ["💰", "👨‍🎨", "🌱"],
+                  "text": [
+                    "Denaro",
+                    "Artisti (Michelangelo)",
+                    "Crescita artistica"
+                  ]
+                },
+                "follow_ups": [
+                  "Come sono diventati così potenti?",
+                  "Quali artisti vivevano qui?",
+                  "Le botteghe esistono ancora?"
+                ],
+                "emoji_logic_follow_ups": {
+                  "Come sono diventati così potenti?": {
+                    "emojis": ["💰", "❓"],
+                    "text": ["Potere economico", "Domanda sulla loro ascesa"]
+                  },
+                  "Quali artisti vivevano qui?": {
+                    "emojis": ["👨‍🎨", "❓"],
+                    "text": ["Lista artisti", "Domanda"]
+                  },
+                  "Le botteghe esistono ancora?": {
+                    "emojis": ["🏘️", "❓"],
+                    "text": ["Botteghe storiche", "Domanda sulla loro persistenza"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "world_wars": {
+        "resistance": {
+          "user": "Cosa ricordi della Resistenza?",
+          "emoji_logic": {
+            "emojis": ["⚔️", "🤫", "🌲", "🥖", "🔔", "🇮🇹", "❓"],
+            "text": [
+              "Lotta",
+              "Segretezza",
+              "Rifugi natura",
+              "Pane (sostegno)",
+              "Campane (Liberazione)",
+              "Italia",
+              "Domanda"
+            ]
+          },
+          "nonno": {
+            "voice_changes": "abbassa la voce 🤫",
+            "emoji_logic_voice_changes": {
+              "emojis": ["🔇", "🤫"],
+              "text": [
+                "Silenzio",
+                "Segretezza e prudenza nel ricordare"
+              ]
+            },
+            "response": "I partigiani si nascondevano sulle colline 🏔️ Mio padre portava loro il pane",
+            "emoji_logic_response": {
+              "emojis": ["🏔️", "👨‍🌾", "🥖"],
+              "text": [
+                "Colline (rifugio)",
+                "Padre contadino",
+                "Pane come aiuto ai partigiani"
+              ]
+            },
+            "memory": "Avevo 5 anni, ma ricordo le campane della liberazione 🔔",
+            "emoji_logic_memory": {
+              "emojis": ["👦", "5️⃣", "🔔"],
+              "text": [
+                "Bambino di 5 anni",
+                "Memoria infantile",
+                "Campane di festa/liberazione"
+              ]
+            },
+            "branching": {
+              "about_resistance": {
+                "questions": [
+                  "Come facevano a comunicare?",
+                  "Ci sono luoghi da visitare?",
+                  "Come si viveva in città?"
+                ],
+                "emoji_logic_questions": {
+                  "Come facevano a comunicare?": {
+                    "emojis": ["🗣️", "❓", "🤫", "✉️"],
+                    "text": [
+                      "Comunicazione",
+                      "Domanda",
+                      "Segretezza",
+                      "Messaggi nascosti"
+                    ]
+                  },
+                  "Ci sono luoghi da visitare?": {
+                    "emojis": ["🏔️", "❓", "🏛️"],
+                    "text": [
+                      "Rifugi in montagna",
+                      "Domanda",
+                      "Luoghi storici/memoriali"
+                    ]
+                  },
+                  "Come si viveva in città?": {
+                    "emojis": ["🏙️", "❓", "😔"],
+                    "text": [
+                      "Città sotto occupazione",
+                      "Domanda",
+                      "Difficoltà quotidiane"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "cultural_lessons": {
+      "coffee_culture": {
+        "opening": {
+          "user": "Come si ordina un caffè come un vero italiano?",
+          "emoji_logic": {
+            "emojis": ["☕", "🇮🇹", "☀️", "👅", "🗣️", "❓"],
+            "text": [
+              "Caffè",
+              "Italia",
+              "Mattina/sole",
+              "Gusto",
+              "Ordinare/parlare",
+              "Domanda"
+            ]
+          },
+          "nonna": {
+            "response": "Mai cappuccino dopo pranzo! ⚠️",
+            "emoji_logic_response": {
+              "emojis": ["☕", "🥛", "❌", "⏰", "⚠️"],
+              "text": [
+                "Caffè",
+                "Latte",
+                "Divieto",
+                "Momento dopo pranzo",
+                "Attenzione/regola culturale"
+              ]
+            },
+            "rules": [
+              "Un caffè - mai 'espresso'",
+              "Al banco, sempre in piedi",
+              "Mai latte nel caffè dopo le 11"
+            ],
+            "emoji_logic_rules": {
+              "Un caffè - mai 'espresso'": {
+                "emojis": ["☕", "❌", "'espresso'"],
+                "text": ["Caffè semplice", "No termine 'espresso'"]
+              },
+              "Al banco, sempre in piedi": {
+                "emojis": ["☕", "🧍", "💶"],
+                "text": [
+                  "Caffè al banco",
+                  "Stare in piedi",
+                  "Costa meno"
+                ]
+              },
+              "Mai latte nel caffè dopo le 11": {
+                "emojis": ["🥛", "❌", "⏰11"],
+                "text": [
+                  "Latte vietato",
+                  "Dopo le 11",
+                  "Regola digestiva/culturale"
+                ]
+              }
+            },
+            "cultural_notes": {
+              "standing": "Costa meno al banco",
+              "emoji_logic_standing": {
+                "emojis": ["💶", "🧍"],
+                "text": ["Risparmio", "Consumo veloce in piedi"]
+              },
+              "timing": "Il cappuccino è per colazione",
+              "emoji_logic_timing": {
+                "emojis": ["☀️", "☕", "🥛"],
+                "text": [
+                  "Mattina",
+                  "Caffè",
+                  "Latte (cappuccino a colazione)"
+                ]
+              },
+              "variations": {
+                "macchiato": "Goccia di latte",
+                "emoji_logic_macchiato": {
+                  "emojis": ["☕", "🥛💧"],
+                  "text": ["Caffè con goccia di latte"]
+                },
+                "corretto": "Con grappa",
+                "emoji_logic_corretto": {
+                  "emojis": ["☕", "🍶"],
+                  "text": ["Caffè con aggiunta di grappa"]
+                },
+                "lungo": "Più acqua",
+                "emoji_logic_lungo": {
+                  "emojis": ["☕", "💧💧"],
+                  "text": ["Caffè allungato con più acqua"]
+                }
+              }
+            }
+          }
+        }
+      },
+      "market_shopping": {
+        "at_market": {
+          "user": "Come si sceglie la frutta buona?",
+          "emoji_logic": {
+            "emojis": ["🍎", "🍏", "🥭", "👀", "🤔", "👨‍🌾", "❓"],
+            "text": [
+              "Mela rossa",
+              "Mela verde",
+              "Mango/frutta varia",
+              "Osservare",
+              "Riflettere",
+              "Fruttivendolo",
+              "Domanda"
+            ]
+          },
+          "nonna": {
+            "lesson": "Mai toccare la frutta! 🚫",
+            "emoji_logic_lesson": {
+              "emojis": ["🍎", "🤚", "❌"],
+              "text": ["Frutta", "Mano", "Divieto di toccare"]
+            },
+            "proper_way": {
+              "asking": "Posso assaggiare?",
+              "emoji_logic_asking": {
+                "emojis": ["👅", "❓"],
+                "text": ["Degustare", "Domanda di cortesia"]
+              },
+              "trusting": "Il fruttivendolo è come il medico",
+              "emoji_logic_trusting": {
+                "emojis": ["👨‍🌾", "=", "👨‍⚕️"],
+                "text": ["Fruttivendolo paragonato al medico (fiducia)"]
+              },
+              "seasonal": "Compra solo frutta di stagione",
+              "emoji_logic_seasonal": {
+                "emojis": ["🗓️", "🍎🥭"],
+                "text": ["Stagionalità", "Frutta del periodo per gusto migliore"]
+              }
+            }
+          }
+        }
+      },
+      "family_geography": {
+        "opening": {
+          "user": "Dove vivono i nostri parenti in Italia?",
+          "emoji_logic": {
+            "emojis": ["👨‍👩‍👧‍👦", "🏠", "🇮🇹", "❓"],
+            "text": [
+              "Famiglia",
+              "Casa (abitazione)",
+              "Italia",
+              "Domanda su posizione geografica"
+            ]
+          },
+          "nonna": {
+            "response": "Abbiamo cugini in Toscana, una zia a Roma, e uno zio in Sicilia!",
+            "emoji_logic_response": {
+              "emojis": ["👩", "👨", "🗺️", "🇮🇹"],
+              "text": [
+                "Parenti femmine (cugine/zia)",
+                "Parente maschio (zio)",
+                "Mappa",
+                "Italia"
+              ]
+            },
+            "family_distribution": "Cugini a Firenze, Zia a Roma, Zio a Palermo",
+            "emoji_logic_family_distribution": {
+              "emojis": ["👨‍👩‍👧‍👦", "⚜️", "🏛️", "🌋"],
+              "text": [
+                "Famiglia",
+                "Firenze (simbolo giglio)",
+                "Roma (monumenti storici)",
+                "Sicilia (vulcano Etna, Palermo)"
+              ]
+            },
+            "follow_ups": [
+              "Come mai a Firenze?",
+              "Cosa fa la zia a Roma?",
+              "Lo zio in Sicilia ha un agrumeto?"
+            ],
+            "emoji_logic_follow_ups": {
+              "Come mai a Firenze?": {
+                "emojis": ["❓", "⚜️", "👨‍👩‍👧‍👦"],
+                "text": [
+                  "Domanda",
+                  "Firenze (giglio)",
+                  "Motivo familiare della scelta"
+                ]
+              },
+              "Cosa fa la zia a Roma?": {
+                "emojis": ["❓", "🏛️", "👩"],
+                "text": [
+                  "Domanda",
+                  "Roma",
+                  "Occupazione della zia"
+                ]
+              },
+              "Lo zio in Sicilia ha un agrumeto?": {
+                "emojis": ["❓", "🍊", "👨"],
+                "text": [
+                  "Domanda",
+                  "Agrumeto (arance)",
+                  "Zio in Sicilia"
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
