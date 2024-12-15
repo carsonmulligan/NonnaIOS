@@ -1,0 +1,118 @@
+{
+    "kitchen_conversations": {
+      "family_recipes": {
+        "ragù": {
+          "opening": {
+            "user": "Nonna, ogni famiglia ha la sua ricetta del ragù?",
+            "emoji_logic": {
+              "emojis": ["👨‍👩‍👧‍👦", "🍲", "👵", "📖", "🇮🇹", "🥘", "❓"],
+              "text": [
+                "Famiglia",
+                "Piatto",
+                "Nonna",
+                "Ricettario",
+                "Italia",
+                "Ragù",
+                "Domanda"
+              ]
+            },
+            "nonna": {
+              "reaction": "ride dolcemente",
+              "response": "Ogni famiglia, ogni nonna, ogni città! Il nostro è alla fiorentina 🍖",
+              "gesture": "apre il vecchio quaderno di ricette",
+              "cultural_note": "Il ragù si cuoce almeno 4 ore, è un rito della domenica",
+              "follow_ups": [
+                "Quali sono gli ingredienti segreti?",
+                "Come lo cucini tu?",
+                "Perché così tanto tempo?"
+              ]
+            }
+          }
+        },
+        "pane_toscano": {
+          "opening": {
+            "user": "Perché il pane toscano non ha sale?",
+            "emoji_logic": {
+              "emojis": ["🍞", "🚫", "🧂", "🏰", "🇮🇹", "❓"],
+              "text": [
+                "Pane",
+                "No",
+                "Sale",
+                "Storia",
+                "Italia",
+                "Domanda"
+              ]
+            },
+            "nonna": {
+              "reaction": "sorride con orgoglio",
+              "response": "È una storia antica! Una guerra tra Firenze e Pisa. Loro bloccavano il sale, noi abbiamo imparato a farne senza.",
+              "cultural_note": "Il pane senza sale si abbina perfettamente con i salumi toscani",
+              "follow_ups": [
+                "Come si fa il pane senza sale?",
+                "È sempre stato così?",
+                "In altre regioni usano il sale?"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "historical_conversations": {
+      "renaissance_florence": {
+        "opening": {
+          "user": "Com'era Firenze durante il Rinascimento?",
+          "emoji_logic": {
+            "emojis": ["🎨", "🏛️", "⏳", "🇮🇹", "❓"],
+            "text": [
+              "Arte",
+              "Architettura",
+              "Storia",
+              "Italia",
+              "Domanda"
+            ]
+          },
+          "nonno": {
+            "reaction": "si sistema gli occhiali",
+            "response": "Ah, l'epoca dei Medici! Ogni strada era una bottega d'artista.",
+            "cultural_note": "I Medici hanno trasformato Firenze nel centro dell'arte mondiale",
+            "follow_ups": [
+              "Chi erano i Medici?",
+              "Quali artisti vivevano qui?",
+              "Come viveva la gente comune?"
+            ]
+          }
+        }
+      }
+    },
+    "cultural_lessons": {
+      "coffee_culture": {
+        "opening": {
+          "user": "Come si ordina un caffè come un vero italiano?",
+          "emoji_logic": {
+            "emojis": ["☕", "🇮🇹", "🗣️", "❓"],
+            "text": [
+              "Caffè",
+              "Italia",
+              "Parlare",
+              "Domanda"
+            ]
+          },
+          "nonna": {
+            "reaction": "si fa seria",
+            "response": "Mai cappuccino dopo pranzo! Un caffè, al banco, veloce.",
+            "cultural_note": "Il cappuccino è solo per colazione",
+            "rules": [
+              "Un caffè - mai 'espresso'",
+              "Al banco, sempre in piedi",
+              "Mai latte nel caffè dopo le 11"
+            ],
+            "follow_ups": [
+              "Perché no cappuccino?",
+              "Quanto costa al banco?",
+              "Che differenza c'è con altri paesi?"
+            ]
+          }
+        }
+      }
+    }
+}
